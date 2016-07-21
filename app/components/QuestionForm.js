@@ -11,7 +11,7 @@ module.exports = React.createClass({
       voteCount: 0,
     }
 
-    // reset()HTML方法，重置为默认值
+    // reset()HTML方法，重置为默认值,PS:只有表单能用,在比如input标签就不能使用，会报错
     this.refs.addQuestionFrom.reset();
     this.props.onNewQuestion(newQuestion);
   },
